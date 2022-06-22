@@ -67,6 +67,7 @@ def report_result(breach_count):
         good_call = "No worry, your password is so far safe."
         return good_call
 
+
 def run_checker(argv):
     '''
     runs the base function for checking passwords, which are being passed to the script as cmd arguments.
@@ -80,4 +81,6 @@ def run_checker(argv):
     else:
         raise RuntimeError("You must enter the password you want to check!")
 
-run_checker(sys.argv)
+
+if __name__ == "__main__":
+    run_checker(sys.argv)
